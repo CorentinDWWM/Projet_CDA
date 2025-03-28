@@ -1,0 +1,29 @@
+@use "../assets/styles/mixin" as mixin;
+
+.header {
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: var(--box-shadow-nav);
+  color: var(--primary);
+  i {
+    display: none;
+    font-size: 30px;
+  }
+  img {
+    width: 90px;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  @include mixin.xs {
+    i {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+}
